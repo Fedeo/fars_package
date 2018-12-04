@@ -3,6 +3,7 @@ Type: Package
 Title: Contains functions to read and anlyze fars data
 Version: 0.1.0
 Author: Federico Sensi
+Maintainer: Federico Sensi <federico.sensi@gmail.com>
 Description: It provides a set of functions to manage the data from 
     the US National Highway Traffic Safety Administration's Fatality 
     Analysis Reporting System, which is a nationwide census providing 
