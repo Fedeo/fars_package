@@ -18,8 +18,9 @@ Make .csv data file name related to the given \code{year}
 The function does not check if the file is available.
 }
 \examples{
+ \dontrun{
 make_filename(2013)
-# "accident_2013.csv.bz2"
+# "accident_2013.csv.bz2"}
 }
 \seealso{
 \link{fars_read}

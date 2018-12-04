@@ -49,8 +49,9 @@ fars_read <- function(filename) {
 #' @author Federico Sensi and Coursera
 #'
 #' @examples
+#'  \dontrun{
 #' make_filename(2013)
-#' # "accident_2013.csv.bz2"
+#' # "accident_2013.csv.bz2"}
 #' @seealso \link{fars_read}
 make_filename <- function(year) {
         year <- as.integer(year)
