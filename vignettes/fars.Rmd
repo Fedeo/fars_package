@@ -1,0 +1,68 @@
+---
+title: "Introduction to fars"
+author: "Federico Sensi"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+The package provides a set of functions to manage the data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System, which is a nationwide census providing  the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes. 
+When you work with `fars accident data` you want tso:
+
+- Read the data for a specific year
+- Summarize accident's data for one or more years
+- Visualize accident on a map
+
+Fars provides a set of functions to simplify this.
+
+**NOTE:** Be sure working directory (setwd()) is set to the path containing the fars data file
+
+
+## Functions
+Fars aims to provide a function for each basic functionatility:
+* `fars_read_years()` to read raw data from the accidents.
+* `fars_summarize_years()` to summarizes yearly accidents data by month.
+* `fars_map_state()` creates a plot with a state map including the accidents location by year.
+
+### Read raw data with `fars_read_years()`
+
+The `fars_read_years()` is used to load raw data:
+
+```{r eval = FALSE}
+# Select a single year
+fars_one_year <- fars_read_years(2013)
+
+# Select multiple years
+fars_two_years <- fars_read_years(c(2013,2014))
+
+```
+
+### Summarize data with `fars_summarize_years()`
+
+The `fars_summarize_years()` is used to summarize raw data:
+
+```{r eval = FALSE}
+# Summarize one years
+fars_summ <- fars_summarize_years(2013)
+
+# Summarize two years
+fars_summs <- fars_summarize_years(c(2013, 2014))
+
+
+```
+
+### Visualize data with `fars_map_state()`
+
+The `fars_map_state()` is used to visualize fars data:
+
+```{r eval = FALSE}
+# Visualize one years
+fars_map_state(1,2013)
+
+
+```
+

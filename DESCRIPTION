@@ -1,0 +1,25 @@
+Package: fars
+Type: Package
+Title: Contains functions to read and anlyze fars data
+Version: 0.1.0
+Author: Federico Sensi
+Description: It provides a set of functions to manage the data from 
+    the US National Highway Traffic Safety Administration's Fatality 
+    Analysis Reporting System, which is a nationwide census providing 
+    the American public yearly data regarding fatal injuries suffered 
+    in motor vehicle traffic crashes.
+License: GNU GPL
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.3.0)
+Suggests: knitr, rmarkdown,
+    testthat
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+Imports:
+    dplyr,
+    readr,
+    magrittr,
+    tidyr,
+    maps,
+    graphics
